@@ -1,6 +1,15 @@
 # FinalXO
+### First when entering
+![XMIXDRIX-enter](https://user-images.githubusercontent.com/62475095/99309025-7b452580-2861-11eb-8919-511bd5c8ce51.jpg)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+### Then 
+![xmixdrix-player1](https://user-images.githubusercontent.com/62475095/99309029-7bddbc00-2861-11eb-9c32-a1e8f7722516.jpg)
+
+### And when some player wins
+![xmixdrix-player1-win](https://user-images.githubusercontent.com/62475095/99309030-7b452580-2861-11eb-8b0f-374b058d6025.jpg)
+
 
 ## Development server
 
