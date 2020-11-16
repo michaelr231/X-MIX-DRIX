@@ -1,0 +1,38 @@
+<div>
+  <div>
+      <h3>Enter 2 Player names</h3>
+      <h4>1. When a player wins, the game restart in 3 seconds.</h4>
+      <h4>2. A player wins when there is 'X' or 'O' in a row\cross\column</h4>
+      <h4>3. Enjoy</h4>
+  </div>
+
+  <br><br>
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="form-group">
+  <input type="text"
+         id="player1"
+         status="success"
+         name="player1"
+         required
+         ngModel
+         nbInput fullWidth fieldSize="medium"
+         placeholder="Player 1"
+          >
+  <br><br><br>
+
+
+  <input type="text"
+         id="player2"
+         status="success"
+         name="player2"
+         required
+         ngModel
+         nbInput fullWidth fieldSize="medium"
+         placeholder="Player 2"
+          >
+  <br><br><br>
+  <button nbButton fullWidth status="info"  type="submit">Enter to the game</button>
+  </div>
+  </form>
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,25 @@
+
+<h1>Turn's: <span *ngIf="getPlayer() == 'X'">{{ user1 }}</span>
+                          <span *ngIf="getPlayer() == 'O'">{{ user2 }}</span></h1>
+
+<div class="nb-global-scrollblock">
+<button nbButton outline status="success" size="small" (click)="newGame()">
+  Start new game</button>
+  <h4 style="float:right" *ngIf="winner">
+    Congratulations!! {{ winner }} Won
+  </h4>
+
+  <span *ngIf="calculateWinner() == null">{{ tie }}</span>
+  <br>
+  <br>
+</div>
+
+
+<main>
+  <app-square *ngFor="let val of squares; let i = index"
+              [value]="val"
+              (click)="makeMove(i)">
+
+  </app-square>
+</main>
+<router-outlet></router-outlet>
