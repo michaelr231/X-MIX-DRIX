@@ -8,10 +8,12 @@ import {Global} from '../Global/global';
   selector: 'app-main',
   templateUrl: './main.component.html'
 })
+
 @Injectable({ providedIn: 'root'})
+
 export class MainComponent {
   @Input() public player1: string;
-  public player2: string;
+           public player2: string;
   constructor(private router: Router,
               public global: Global) {
   }
@@ -21,7 +23,5 @@ export class MainComponent {
     this.global.player2 = form.value.player2;
     this.router.navigate(['/board']);
   }
-
-
 
 }
