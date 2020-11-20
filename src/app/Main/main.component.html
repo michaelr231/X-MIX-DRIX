@@ -9,30 +9,32 @@
   <br><br>
   <form (ngSubmit)="onSubmit(f)" #f="ngForm">
     <div class="form-group">
-  <input type="text"
+     <input type="text"
          id="player1"
          status="success"
          name="player1"
          required
          ngModel
          nbInput fullWidth fieldSize="medium"
-         placeholder="Player 1"
-          >
+         placeholder="Player 1">
   <br><br><br>
 
 
-  <input type="text"
+      <input type="text"
          id="player2"
          status="success"
          name="player2"
          required
          ngModel
          nbInput fullWidth fieldSize="medium"
-         placeholder="Player 2"
-          >
+         placeholder="Player 2">
   <br><br><br>
-  <button nbButton fullWidth status="info"  type="submit">Enter to the game</button>
-  </div>
+      
+  <button nbButton 
+          fullWidth
+          status="info"
+          type="submit">Enter to the game</button>
+     </div>
   </form>
   <router-outlet></router-outlet>
 </div>
